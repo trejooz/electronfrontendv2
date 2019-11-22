@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="scrollable">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Sistema de regristro y control de mantenimiento a equipos de cómputo</title>
+    <link rel="stylesheet" href="photon.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="mainWrapper">
+        <h1>CONTROL DE MANTENIMIENTOS </h1>
+
+        <label> Busca la unidad requerida</label>
+        <form>
+            <div class="form-group">
+                <label>Ingresa el departamento:</label>
+                <form>
+                    <br />
+                    <select id="deptobusqueda" name="departamentosbuscar">
+                        <option value="12345">Sistemas</option>
+                        <option value="56789">Recursos Humanos</option>
+                        <option value="34567">Area Jurídica </option>
+                        <option value="34567">Construcción y montaje </option>
+                    </select>
+                </form>
+            </div>
+            <div class="form-group">
+                <label>Ingresa el usuario:</label>
+                <form>
+                    <select id="usuariobusqueda" name="usuarios">
+                        <option value="12345">12345</option>
+                        <option value="56789">56789</option>
+                        <option value="34567">34567 </option>
+                        <option value="34567"> 34567 </option>
+                    </select>
+                </form>
+            </div>
+            <div class="form-group">
+                <label>Ingresa el numero de inventario:</label>
+                <form>
+                    <select id="inventariobusqueda" name="inventario">
+                        <option value="12345">56788</option>
+                        <option value="56789">56789</option>
+                        <option value="34567">56780 </option>
+                        <option value="34567"> 56783 </option>
+                    </select>
+                </form>
+            </div>
+            <div class="form-group">
+                <label>Categoria</label>
+                <form>
+                    <input type="radio" name="gender" value="male" checked> Computadora
+                    <br/>
+                    <input type="radio" name="gender" value="male" checked> Impresora
+                    <br/>
+                </form>
+            </div>
+
+            <br />
+            <button id="btnbusqueda" >Buscar</button>
+            <div class="form-group">
+                <label>
+                    <br /> Ingresa el número de mantenimientos por año de esta unidad</label>
+            </div>
+
+            <input id="mxa" type="number" min="1" max="12" step="1" value="1" />
+            <div class="form-group">
+                <br />
+                <label>Fecha último mantenimiento: </label>
+            </div>
+            <input id="proxm" type="date" name="fecha">
+            <div class="form-group">
+                <br />
+                <label>Fecha próximo mantenimiento </label>
+            </div>
+            <input id="um6" type="date" name="fecha">
+            <div class="form-group">
+                <br />
+                <label>Fecha mantenimiento </label>
+            </div>
+            <input id="um5" type="date" name="fecha">
+            <div class="form-group">
+                <br />
+                <label>Fecha mantenimiento </label>
+            </div>
+            <input id="um4" type="date" name="fecha">
+            <div class="form-group">
+                <br />
+                <label>Fecha mantenimiento </label>
+            </div>
+            <input id="um3" type="date" name="fecha">
+            <div class="form-group">
+                <br />
+                <label>Fecha mantenimiento </label>
+            </div>
+            <input id="um2" type="date" name="fecha">
+            <div class="form-group">
+                <br />
+                <label>Fecha mantenimiento </label>
+            </div>
+            <input id="um1" type="date" name="fecha">
+
+        </form>
+        <br />
+        <br />
+        <button id="btnGuardar" >Guardar</button>
+        <button id="btnEditar" >Editar</button>
+        <button id="btnDelete" >Eliminar</button>
+        <button id="btnPrint" >Imprimir reporte</button>
+
+    </div>
+
+    <script>
+        require('src/add.js')
+    </script>
+
+</body>
+
+</html>

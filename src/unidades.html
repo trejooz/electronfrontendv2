@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="scrollable">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Sistema de regristro y control de mantenimiento a equipos de cómputo </title>
+    <link rel="stylesheet" href="photon.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="mainWrapper">
+        <h1>REGISTRO DE UNIDADES </h1>
+        <h2>Ingresa unidad</h2>
+
+        <form>
+            <div class="form-group">
+                <label>Inventario</label>
+                <input id="inventario" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                <label>Serie</label>
+                <input id="serie" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                <label>Modelos</label>
+                <input id="modelos" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Características</label>
+                <input id="caracteristicas" type="text" class="form-control">
+            </div>
+            <h5>ESPECIFICACIONES GENERALES:</h5>
+            <div class="form-group">
+
+                <label>Departamento</label>
+
+
+                    <select id="depto" name="departamentos">
+                        <option value="12345">Sistemas</option>
+                        <option value="56789">Recursos Humanos</option>
+                        <option value="34567">Area Jurídica </option>
+                        <option value="34567">Construcción y montaje </option>
+                    </select>
+
+            </div>
+            <div class="form-group">
+                <label>Empresa</label>
+                <select id="empresa" name="empresa">
+                    <option value="1">Grupo Azul</option>
+                    <option value="2">Cooperativa La Palma</option>
+                    <option value="3">Cooperativa Hidalgo</option>
+                    <option value="4">Cooperativa La Unión</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Usuario</label>
+                <select id="user" name="usuario">
+                    <option value="1">567895</option>
+                    <option value="2">345678</option>
+                    <option value="3">354623</option>
+                    <option value="4">123678</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Categoria</label>
+                <form>
+                    <br/>
+                    <input type="radio" name="gender" value="male" checked> Computadora
+                    <br/>
+                    <input type="radio" name="gender" value="male" checked> Impresora
+                    <br/>
+                </form>
+            </div>
+            <div class="form-group">
+                <label>Marca</label>
+                <select id="brand" name="marca">
+                    <option value="1">Leonovo</option>
+                    <option value="2">HP</option>
+                    <option value="3">Compaq</option>
+                    <option value="4">Dell</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Procesador</label>
+                <select id="procesador" name="procesador">
+                    <option value="1">i5</option>
+                    <option value="2">i7</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Sistema operativo</label>
+                <select id="so" name="sistemaoperativo">
+                    <option value="1">Windows 10</option>
+                    <option value="2">Windows 7</option>
+                    <option value="3">Linux</option>
+                    <option value="4">MacOS</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>RAM</label>
+                <select id="ram" name="ram">
+                    <option value="1">6 gb</option>
+                    <option value="2">8 gb</option>
+                    <option value="3">10 gb</option>
+                  </select>
+
+            </div>
+            <div class="form-group">
+                <label>Disco Duro</label>
+                <select id="discoduro" name="discoduro">
+                    <option value="1">500 gb</option>
+                    <option value="2">1 T</option>
+                    <option value="3">800 gb</option>
+                  </select>
+            </div>
+
+
+        </form>
+        <button id="btnGuardar" >Guardar</button>
+        <button id="btnEditar" >Editar</button>
+        <button id="btnDelete">Eliminar</button>
+    </div>
+    <script>
+        require('src/unidades.js')
+    </script>
+
+</body>
+
+</html>
