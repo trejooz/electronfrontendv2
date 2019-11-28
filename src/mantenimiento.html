@@ -22,32 +22,30 @@
                 <form>
                     <br />
                     <select id="deptobusqueda" name="departamentosbuscar">
-                        <option value="12345">Sistemas</option>
-                        <option value="56789">Recursos Humanos</option>
-                        <option value="34567">Area Jurídica </option>
-                        <option value="34567">Construcción y montaje </option>
+                        <option value="1">Sistemas</option>
+                        <option value="2">Recursos Humanos</option>
+                        <option value="3">Area Jurídica </option>
+                        <option value="4">Construcción y montaje </option>
                     </select>
                 </form>
             </div>
             <div class="form-group">
                 <label>Ingresa el usuario:</label>
-                <form>
-                    <select id="usuariobusqueda" name="usuarios">
-                        <option value="12345">12345</option>
-                        <option value="56789">56789</option>
-                        <option value="34567">34567 </option>
-                        <option value="34567"> 34567 </option>
-                    </select>
-                </form>
+                <select id="user" name="usuario">
+                    <option value="1">h_rocrhe</option>
+                    <option value="2">h_alanc</option>
+                    <option value="3">h_jofamo</option>
+                    <option value="4">h_foedfr</option>
+                </select>
             </div>
             <div class="form-group">
                 <label>Ingresa el numero de inventario:</label>
                 <form>
                     <select id="inventariobusqueda" name="inventario">
-                        <option value="12345">56788</option>
-                        <option value="56789">56789</option>
-                        <option value="34567">56780 </option>
-                        <option value="34567"> 56783 </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3 </option>
+                        <option value="4"> 4 </option>
                     </select>
                 </form>
             </div>
@@ -111,13 +109,16 @@
         <button id="btnGuardar" >Guardar</button>
         <button id="btnEditar" >Editar</button>
         <button id="btnDelete" >Eliminar</button>
-        <button id="btnPrint" >Imprimir reporte</button>
+        <button onclick="myFunction()">Imprimir reporte</button>
 
     </div>
 
-    <script>
-        require('src/add.js')
-    </script>
+      <script src="../src/mantenimiento.js"></script>
+      <script>
+function myFunction() {
+  window.print();
+}
+</script>
 
 </body>
 

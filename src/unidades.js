@@ -1,5 +1,4 @@
-const fs = require('fs')
-const path = require('path')
+
 btnGuardar = document.getElementById('btnGuardar')
 btnEditar = document.getElementById('btnEditar')
 btnDelete = document.getElementById('btnDelete')
